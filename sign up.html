@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>UniToi - Sign Up</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./src/logo.png" type="image/x-icon"/>
+        <script src="cookiefunctions.js"></script>
+        <script src="register.js"></script>
+    </head>
+
+
+    <body background="./src/bg2.jpg" style=" background-repeat:no-repeat; background-size:100% 100%; background-attachment: fixed;">
+        <div class="navigator">
+            <!-- navigator -->
+            <ul>
+                <li><img src="./src/logo.png" width="100" alt="Logo"></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="map.html">MAP</a></li>
+
+                <li class="dropdown">
+                    <a class="dropbtn" href="account.html">ACCOUNT</a>
+                    <div class="dropdown-content">
+                        <a href="log in.html">SIGN IN</a>
+                        <a href="sign up.html">SIGN UP</a>
+                    </div>
+                </li>
+
+                <li><a href="about us.html">ABOUT US</a></li>   
+            </ul>
+        </div>
+
+        <br>
+
+        <div id="divID1" style="text-align: center; color:rgba(217, 213, 206,0.85)">        
+            <h1 id="h1ID1">Register</h1>
+        </div>
+
+        <br>
+
+        <div class="grid1parent1" style="color:rgba(217, 213, 206,0.85)">
+            <div class="grid1child1">
+            </div>
+            <div class="grid1child2">
+                <form name="myForm1"
+                action="log in.html"
+                onSubmit="return updatePassword(firstname, myPwd1, myPwd2)">
+                <br><br>
+                ID: <input type="text" name="firstname"><br><br>
+                Password: <input type="password" name="myPwd1"><br><br>
+                Password Again: <input type="password" name="myPwd2"><br><br>
+                <br><br>
+                <div style="text-align: center;">
+                <input type = "submit" value ="Register" class="button" >
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+    </body>
+</html>
