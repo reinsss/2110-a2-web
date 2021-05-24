@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .navigator ul {
@@ -65,7 +65,7 @@ body {
 }
 
 .button {
-    background-color: #2c271f; /* Green */
+    background-color: #2c271f;
     border: none;
     color: #d9d5ce;
     padding: 15px 32px;
@@ -78,7 +78,7 @@ body {
 
 }
 
-.grid1parent1 {
+.grid1parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -100,3 +100,20 @@ input[type=text], input[type=password] {
     background:rgba(200,200,200,0.4);
     border:rgba(200,200,200,0.4);
   }
+
+.button2 {
+    background-color: rgba(24, 16, 4, 0.8);
+    color: #d9d5ce;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    -webkit-appearance: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
