@@ -28,13 +28,21 @@
                     </div>
                 </li>
 
-                <li><a href="about us.html">ABOUT US</a></li>   
+                <li class="dropdown">
+                    <a class="dropbtn" href="about us.html">OTHER</a>
+                    <div class="dropdown-content">
+                        <a href="about us.html">ABOUT US</a>
+                        <a href="contact us.html">CONTACT US</a>
+                        <a href="helpdesk.html">FAQ</a>
+                        <a href="privacy policy.html">PRIVACY POLICY</a>
+                    </div>
+                </li>   
             </ul>
         </div>
 
         <br>
 
-        <div id="divID1" style="text-align: center;">        
+        <div id="divID1" style="text-align: center;">
             <h1 id="h1ID1">Login</h1>
         </div>
 
@@ -49,14 +57,14 @@
                     Password: <input type="password" name="myPwd">
                 <br><br>
                 <div style="text-align: center;">
-                <input type = "button" 
-                    value ="Login" 
+                <input type = "button"
+                    value ="Login"
                     onClick="updateHeader(firstname, myPwd)" class="button2" style="margin: auto;">
                 </form>
                 </div>
             </div>
         </div>
 
-        
+
     </body>
 </html>

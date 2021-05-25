@@ -1,3 +1,5 @@
+html { overflow-y: scroll; }
+
 body {
     background-color: #d9d5ce;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -85,7 +87,7 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     }
-    
+
 .grid1child1 { grid-area: 1 / 5 / NaN / NaN; }
 .grid1child2 { grid-area: 1 / 2 / 2 / 3; }
 
@@ -116,4 +118,70 @@ input[type=text], input[type=password] {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[class=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[class=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.alert{
+  padding:15px;
+  margin-bottom:20px;
+  border:1px solid transparent;
+  border-radius:4px
+}
+
+.alert-success{
+  color:#3c763d;
+  background-color:#dff0d8;
+  border-color:#d6e9c6
+}
+
+.alert-success hr{border-top-color:#c9e2b3}
+
+.alert-success .alert-link{color:#2b542c}
+
+.info p, h2{
+  padding-left: 30%;
+  padding-right: 30%
+}
+
+.info h1{
+  text-align: center;
+}
+
+.info a{
+  color: #d9d5ce;
 }
