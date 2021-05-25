@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>UniToi - Home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./src/logo.png" type="image/x-icon"/>
+        <script src="general.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    </head>
+
+
+    <body>
+        <div class="navigator">
+            <!-- navigator -->
+            <ul>
+                <li><img src="./src/logo.png" width="100" alt="Logo"></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="map.html">MAP</a></li>
+
+                <li class="dropdown">
+                    <a class="dropbtn" href="account.html">ACCOUNT</a>
+                    <div class="dropdown-content">
+                        <a href="log in.html">LOG IN</a>
+                        <a href="sign up.html">SIGN UP</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropbtn" href="about us.html">OTHER</a>
+                    <div class="dropdown-content">
+                        <a href="about us.html">ABOUT US</a>
+                        <a href="contact us.html">CONTACT US</a>
+                        <a href="helpdesk.html">FAQ</a>
+                        <a href="privacy policy.html">PRIVACY POLICY</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="alert alert-success" id="message" style="visibility: hidden">
+          <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+        <br>
+
+        <div style="text-align: center;">
+            <h1>Contact us</h1>
+            <p>You can contact us use this email address: unitoiteam@unitoi.com</p>
+            <p>You can also contact us use the form provided below. </p>
+        </div>
+
+        <br>
+
+        <div class="container">
+          <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="role">Role</label>
+            <select id="role" name="role">
+              <option value="vistor">Vistor</option>
+              <option value="staff">Staff</option>
+              <option value="student">Student</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="button" value="Submit" class="submit" onClick="document.getElementById('message').style.visibility='visible'">
+          </form>
+        </div>
+
+        <br>
+
+
+    </body>
+</html>
