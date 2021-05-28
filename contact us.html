@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>UniToi - Home</title>
+        <title>UniToi - Contact</title>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./src/logo.png" type="image/x-icon"/>
         <script src="general.js"></script>
@@ -37,15 +37,13 @@
                 </li>
             </ul>
         </div>
-        <br>
 
         <div class="alert alert-success" id="message" style="visibility: hidden">
           <strong>Success!</strong> This alert box could indicate a successful or positive action.
         </div>
-        <br>
 
         <div style="text-align: center;">
-            <h1>Contact us</h1>
+            <h1>Contact Us</h1>
             <p>You can contact us use this email address: unitoiteam@unitoi.com</p>
             <p>You can also contact us use the form provided below. </p>
         </div>
@@ -64,16 +62,16 @@
             <input type="text" id="email" name="email" placeholder="Your email..">
 
             <label for="role">Role</label>
-            <select id="role" name="role">
+            <select id="role" name="role" style="color: #7b743e; background-color: #d9d5ce;">
               <option value="vistor">Vistor</option>
               <option value="staff">Staff</option>
               <option value="student">Student</option>
             </select>
 
             <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; background-color: #d9d5ce;"></textarea>
 
-            <input type="button" value="Submit" class="submit" onClick="document.getElementById('message').style.visibility='visible'">
+            <input type="button" value="Submit" class="submit" onClick="document.getElementById('message').style.visibility='visible'" >
           </form>
         </div>
 

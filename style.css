@@ -5,7 +5,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #d9d5ce;
     margin: 0%;
-    background-image:url('./src/bg2.jpg');
+    background-image:url('./src/bg3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -99,12 +99,12 @@ input[type=text], input[type=password] {
     border: none;
     color: #d9d5ce;
     border-radius: 4px;
-    background:rgba(200,200,200,0.4);
+    background:#d9d5ce;
     border:rgba(200,200,200,0.4);
   }
 
 .button2 {
-    background-color: rgba(24, 16, 4, 0.8);
+    background-color: rgba(123, 116, 62, 0.8);
     color: #d9d5ce;
     width: 100px;
     height: 100px;
@@ -120,6 +120,11 @@ input[type=text], input[type=password] {
     cursor: pointer;
 }
 
+.button2:hover {
+    background-color: #4d4615;
+}
+
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -129,13 +134,13 @@ input[type=text], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
 input[class=submit] {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #7b743e;
+  color: #d9d5ce;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -144,13 +149,13 @@ input[class=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[class=submit]:hover {
-  background-color: #45a049;
+  background-color: #4d4615;
 }
 
 /* Add a background color and some padding around the form */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: rgba(24, 16, 4, 0.8);
   padding: 20px;
   width: 70%;
   margin: 0 auto;
@@ -164,18 +169,18 @@ input[class=submit]:hover {
 }
 
 .alert-success{
-  color:#3c763d;
-  background-color:#dff0d8;
-  border-color:#d6e9c6
+  color:#7b743e;
+  background-color:rgba(217, 213, 206, 0.8);
+  border-color:#7b743e
 }
 
-.alert-success hr{border-top-color:#c9e2b3}
+.alert-success hr{border-top-color:#7b743e}
 
 .alert-success .alert-link{color:#2b542c}
 
 .info p, h2{
   padding-left: 30%;
-  padding-right: 30%
+  padding-right: 30%;
 }
 
 .info h1{
