@@ -282,7 +282,7 @@ button[id=comment]:hover {
   background-color: #4d4615;
 }
 
-button[id=view],button[id=comment] {
+button[id=view],button[id=comment]{
   height: 40px;
   width: 100%;
   background-color: #7b743e;
@@ -292,7 +292,23 @@ button[id=view],button[id=comment] {
   cursor: pointer;
 }
 
+button[id=navigate]{
+  height: 40px;
+  width: 70%;
+  background-color: #7b743e;
+  color: #d9d5ce;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 15%;
+}
+
 button[id=view]:hover {
+  background-color: #4d4615;
+}
+
+button[id=navigate]:hover {
   background-color: #4d4615;
 }
 
