@@ -337,7 +337,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #7b743e;
+  background-color: #2c271f;
   margin: 0 auto; /* 5% from the top, 15% from the bottom and centered */
   width: 70%; /* Could be more or less, depending on screen size */
 }
@@ -387,14 +387,14 @@ span.psw {
 
 .container2 {
   border-radius: 5px;
-  background-color: #7b743e;
+  background-color: #2c271f;
   padding: 20px;
   width: 70%;
   margin: 0 auto;
 }
 
 .cancelbtn {
-  background-color: red;
+  background-color: #9b4748;
   color: #d9d5ce;
   padding: 12px 20px;
   border: none;
@@ -403,13 +403,21 @@ span.psw {
   margin-right: 30%;
 }
 
+.cancelbtn:hover {
+  background-color: #7d1516;
+}
+
 .submit {
-  background-color: green;
+  background-color: #7b743e;
   color: #d9d5ce;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #4d4615;
 }
 
 footer {
