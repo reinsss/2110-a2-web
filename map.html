@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./src/logo.png" type="image/x-icon"/>
         <script src="general.js"></script>
+        <script src="map.js"></script>
         <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     </head>
 
@@ -39,7 +40,57 @@
         </div>
 
         <br>
+        <div style="text-align: center;">
+            <h1>Map</h1>
+        </div>
+        <br>
+        <input
+          id="pac-input"
+          class="controls"
+          type="text"
+          placeholder="Search Box"
+        />
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVJCk1O7R_VQ9SLgD7WZ1Khoy9KKNHW5s&callback=initMap&libraries=places&v=weekly"
+          async
+        ></script>
+
+        <br>
+
+        <div id="outer">
+          <div class="inner"><button id="comment" onclick="document.getElementById('id01').style.display='block'">Comment</button></div>
+          <div class="inner"><button id="view">View comment</button></div>
+        </div>
+
+        <footer>
+            <h>UniToi@unitoi.com</h>
+        </footer>
+
+        <div id="id01" class="modal">
+
+          <form class="modal-content animate">
+
+
+            <div class="container2">
+              <label for="uname"><b>Topic</b></label>
+              <input type="text" placeholder="Enter topic" name="uname">
+
+              <label for="subject">Comment</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; background-color: #d9d5ce;"></textarea>
+
+              <button class="submit">Comment</button>
+
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
+          </form>
+        </div>
+
 
 
     </body>
+
 </html>

@@ -190,3 +190,226 @@ input[class=submit]:hover {
 .info a{
   color: #d9d5ce;
 }
+
+#map {
+  height: 700px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#title {
+  color: #fff;
+  background-color: #4d90fe;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+#target {
+  width: 345px;
+}
+
+button[id=location]{
+  height: 40px;
+  width: 1000px;
+  margin-top: 650px;
+  background-color: #7b743e;
+  color: #d9d5ce;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[id=location]:hover {
+  background-color: #4d4615;
+}
+
+button[id=comment]:hover {
+  background-color: #4d4615;
+}
+
+button[id=view],button[id=comment] {
+  height: 40px;
+  width: 100%;
+  background-color: #7b743e;
+  color: #d9d5ce;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[id=view]:hover {
+  background-color: #4d4615;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(24, 16, 4, 0.8); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #7b743e;
+  margin: 0 auto; /* 5% from the top, 15% from the bottom and centered */
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #7b743e;
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cancelbtn {
+  background-color: red;
+  color: #d9d5ce;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 30%;
+}
+
+.submit {
+  background-color: green;
+  color: #d9d5ce;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 15%;
+  display: block;
+}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    width: 35%;
+    display: inline-block;
+}
