@@ -3,6 +3,7 @@
 
     <head>
         <title>UniToi - Map</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="./src/logo.png" type="image/x-icon"/>
         <script src="general.js"></script>
@@ -61,11 +62,8 @@
 
         <br>
 
-        <button id="navigate">Navigate</button>
-        <div id="outer">
-          <div class="inner"><button id="comment" onclick="document.getElementById('id01').style.display='block'">Comment</button></div>
-          <div class="inner"><button id="view">View comment</button></div>
-        </div>
+        <button type="button" id="navigate" onclick="document.getElementById('id01').style.display='block'">Toilet Information</button>
+
 
 
 
@@ -78,16 +76,148 @@
           <form class="modal-content animate">
 
 
+
+            <div class="container2">
+              <div style="text-align: center;">
+                  <h1>Toilet 1</h1>
+              </div>
+              <div>
+                  <p>Information:</p>
+                  <p>This toilte is in SciTech lib. The distance is about 100m.</p><br>
+                  <p>Address:</p>
+                  <p>Jane Foss Russell Building, 160 City Rd, Darlington NSW 2008, Australia</p><br>
+                  <p>Tags: male, female, unisex, disabled</p><br>
+                  <img src="./src/SciTech.jpg" alt="SciTech lib toilet">
+              </div>
+
+              <button type="button" class="submit" onclick="document.getElementById('id03').style.display='block'">Comment</button>
+              <button type="button" class="submit" onclick="document.getElementById('id01').style.display='none'">Navigate</button>
+
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="exitbtn">Exit</button>
+              <button type="button" class="navigatebtn" onclick="document.getElementById('id01').style.display='none'">Navigate</button>
+
+              <div>
+                  <p>Review:</p>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <p>4.1 average based on 254 reviews.</p>
+                  <hr style="border:3px solid #f1f1f1">
+
+                  <div class="row">
+                    <div class="side">
+                      <div>5 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-5"></div>
+                      </div>
+                    </div>
+                    <div class="side right">
+                      <div>150</div>
+                    </div>
+                    <div class="side">
+                      <div>4 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-4"></div>
+                      </div>
+                    </div>
+                    <div class="side right">
+                      <div>63</div>
+                    </div>
+                    <div class="side">
+                      <div>3 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-3"></div>
+                      </div>
+                    </div>
+                    <div class="side right">
+                      <div>15</div>
+                    </div>
+                    <div class="side">
+                      <div>2 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-2"></div>
+                      </div>
+                    </div>
+                    <div class="side right">
+                      <div>6</div>
+                    </div>
+                    <div class="side">
+                      <div>1 star</div>
+                    </div>
+                    <div class="middle">
+                      <div class="bar-container">
+                        <div class="bar-1"></div>
+                      </div>
+                    </div>
+                    <div class="side right">
+                      <div>20</div>
+                    </div>
+                  </div>
+              </div>
+              <br>
+
+              <p style="font-size: 25px">User 1:Greate!!!!!
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span><br>
+              <p style="font-size: 15px">Best!!!!!</p></p><br>
+
+              <p style="font-size: 25px">User 2:Recommand!
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span><br>
+              <p style="font-size: 15px">Recommand it!!!!!</p></p><br>
+
+              <p style="font-size: 25px">User 3:Bad experience :(
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span><br>
+              <p style="font-size: 15px">Dont go there!</p></p><br>
+
+
+          </form>
+        </div>
+
+        <div id="id03" class="modal">
+
+          <form class="modal-content animate">
+
+
             <div class="container2">
               <label for="uname"><b>Topic</b></label>
               <input type="text" placeholder="Enter topic" name="uname">
 
+              <label for="role">Rate</label>
+              <select id="role" name="role" style="color: #7b743e; background-color: #d9d5ce;">
+                <option value="vistor">5 star</option>
+                <option value="staff">4 star</option>
+                <option value="student">3 star</option>
+                <option value="staff">2 star</option>
+                <option value="student">1 star</option>
+              </select>
+
               <label for="subject">Comment</label>
               <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; background-color: #d9d5ce;"></textarea>
 
-              <button class="submit">Comment</button>
+              <button type="button" class="submit" onclick="submitComment()">Comment</button>
 
-              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
 
           </form>
         </div>

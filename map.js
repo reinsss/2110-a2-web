@@ -106,3 +106,8 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
   );
   infoWindow.open(map);
 }
+
+function submitComment() {
+  document.getElementById('id03').style.display='none';
+  alert("Successful!");
+}
